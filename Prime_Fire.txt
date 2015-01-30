@@ -5,30 +5,88 @@ Ignition:
     Range: Engaged      Duration: 1 round       Amount: 1 Match's worth     Damage: 1
     For 1 Mana, create either an instantaneous, violent spark (like that created by sparking the leads of a car battery) or a persistent flame of size [AMOUNT} is 
     created. The spark or flame is always created at engaged range to the caster, but may continue to exist, assuming that it is withing [RANGE] of the caster. Once
-    the flame goes beyond [RANGE] of the caster, it will last [DURATION] turns, after which, it is treated like normal fire: without adequate fuel, it will burn 
-    itself out. With adequate fuel, the fire will last indefineately, and should be treated as non-magic. Beginning to channel another spell, or making an attack with 
-    the created flame/spark causes the flame/spark to be consumed. When fire created via "Ignition" is used to "Imbue" an item, that item will retain its properties for
-    [DURATION] turns, after which the spell needs to be re-applied. The spell Imbuing and object will be cancelled if the caster starts channeling another spell, but
-    may also be canceled by the caster as an incendental. Imbued items have the spell's damage added to their base value, and any special qualites of the spell are
-    treated as if they are a part of the imbued item attacks with imbued items are made with the skill associated with the item (brawl or melee). Spells used to make 
-    ranged attacks can be made against any target within [RANGE] range of the caster as a "Ranged (light)" attack. If flames created via "Igntion" are made against 
-    targets beyond [RANGE] range, the attack automatically fails, and the Mana associated with the spell are discarded. Fire lit by a "spark" created by "Ignition"
-    is treated as non-magical fire, it cannot be controled by a mage, nor can any attributes be added to it. If a player takes damage during the channeling of a spell
-    they are required to make a disciple check [1 difficulty per 2 damage taken]; failure of the check results in the spell being cancelled, and all the Mana 
-    associated with the spell is discarded. 
+    the flame goes beyond [RANGE] of the caster, it is treated like normal fire: without adequate fuel, it will burn itself out. With adequate fuel, the fire will last 
+    indefineately, and should be treated as non-magic. Beginning to channel another spell, or making an attack with the created flame/spark causes the flame/spark to be
+    consumed.  Spells used to make ranged attacks can be made against any target within [RANGE] range of the caster as a "Ranged (light)" attack. If flames created via 
+    "Igntion" are made against targets beyond [RANGE] range, the attack automatically fails, and the Mana associated with the spell are discarded. Fire lit by a "spark"
+    created by "Ignition" is treated as non-magical fire, it cannot be controled by a mage, nor can any attributes be added to it. If a player takes damage during the 
+    channeling of a spell they are required to make a disciple check [1 difficulty per 2 damage taken]; failure of the check results in the spell being cancelled, and 
+    all the Mana associated with the spell is discarded. A number of modifications equal to or less than the the caster's "Mage Rank" can be applied to a spell. 
     
 
 Range: Short
     Cost: 1 Mana
-    Increases the "Range" stat of the "Ignition" Spell to "Short". A spell ranged "Short" can be made against targets at short or engaged ranges with no penalty.
+    Increases the "Range" stat of the "Ignition" spell currently being channeled to "Short". A spell with range "Short" can be used on targets at "short" or "engaged" 
+        ranges (difficulty due to range is applied normally, attacks against targets beyond "Short" ranges automatically fail).
 
 Range: Medium
     Cost: 1 Mana
-    Incraesed the "Range" stat of the "Ignition" spell to "Medium". A spell ranged "Medium" can be made against targets at engaged, short or Medium ranges with
-        no penalty.
+    Increases the "Range" stat of the "Ignition" spell currently being channeled to "Medium". A spell with range "Medium" can be used on targets at "short", "engaged" 
+        or "medium" ranges (difficulty due to range is applied normally, attacks against targets beyond "medium" ranges automatically fail).
 
 Range: Long
-    Increases the "Range" stat of the "Ignition" spell to "Long". A spell  ranged "Long" can be made against targets at engaged, short, medium or long ranges
-        with no penalty.
+    Cost: 1 Mana
+    Increases the "Range" stat of the "Ignition" spell currently being channeled to "Long". A spell with range "Long" can be used on targets at "short", "engaged", 
+        "medium" or "long" ranges (difficulty due to range is applied normally, attacks against targets beyond "long" ranges automatically fail).
 
+Intensity
+    Cost: 1 Mana
+    Increases the "Damage" stat of the "Ignition" spell currently being channeled by 2 points. This effect can stack a number of times equal to the "Mage Rank" of the
+    character channeling the spell.
 
+Intensity
+    Cost: 1 Mana
+    Increases the "Damage" stat of the "Ignition" spell currently being channeled by 5 points. This effect can stack a number of times equal to the "Mage Rank" of the
+    character channeling the spell.
+
+Intensity
+    Cost: 1 Mana
+    Increases the "Damage" stat of the "Ignition" spell currently being channeled by 8 points. This effect can stack a number of times equal to the "Mage Rank" of the
+    character channeling the spell.
+    
+Enervate
+    Cost: 0 Mana
+    Allows the user to convert any and all of the damage associated with the currently channeling "Igniton" spell, including damaging effects such as Burn or 
+    Blast are discarded; no other damaging effects can be added. The target recieves 3 temporary hit points. This effect cannot be stacked when being channeled. 
+    multiple instances of temporary hit points being granted by "Enervate" (even from different casters, cannot stack: the newer temporary hit points overwrite the 
+    older one, (consider the "timer" for the temporary hit points to be refreshed)).
+
+Warm
+    Cost: 0 Mana
+    Allows the user to convert any and all of the damage associated with the currently channeling "Ignition" spell, including damaging effects such as Burn or
+    Blast are discarded; no other damaging effects can be added. The target heals 1 strain. This effect cannot be stacked. This effect cannot be stacked when being 
+    channeled. 
+
+Burn:
+    Cost: 0 Mana
+    The caster may choose to add the Burn(2) quality to the spell currently being channeled. This is considered a mod, and a mage cannot add more mods then they have
+    Mage Ranks. If multiple mods grant the spell the Burn quality, the ranks add their values (Burn(2) and burn(5) become Burn(7))
+
+Flash Bang:
+    Cost: 0 Mana
+    The caster may choose to add the Disorient(3) quality to the spell currently being channeled. This is considered a mod, and a mage cannot add more mods then they
+    have Mage Ranks. If multiple mods grant the spell the Disorient quality, their ranks add their values (Disorient(3) and Disorient(3) beome Disorient(6))
+
+Explode:
+    Cost: 0 Mana
+    The caster may choose to add the Blast(4) quality to the spell currently being channeled. This is conisdered a mod, and a mage cannot add more mods then they
+    have Mage Ranks. If multiple mods grant the spell the Blast qulaity, their ranks add their values (Blast (4) and Blast(4) become Blast(8))
+
+Backdraft:
+    Cost: 0 Mana
+    The caster may choose to add the Knockdown quality to the spell currently being channeled. This is considered a mod, and a mage cannot add more mods then they 
+    have Mage Ranks. Knockdown may not stack; if multiple mods grant a spell "knockdown", the first source is discarded.
+
+Burn:
+    Cost: 0 Mana
+    The caster may choose to add the Burn(5) quality to the spell currently being channeled. This is considered a mod, and a mage cannot add more mods then they have
+    Mage Ranks. If multiple mods grant the spell the Burn quality, the ranks add their values (Burn(2) and burn(5) become Burn(7)).
+
+Explode:
+    Cost: 0 Mana
+    The caster may choose to add the Blast(10) quality to the spell currently being channeled. This is conisdered a mod, and a mage cannot add more mods then they
+    have Mage Ranks. If multiple mods grant the spell the Blast qulaity, their ranks add their values (Blast (10) and Blast(4) become Blast(14))
+
+Plasma:
+    Cost: 2 Mana
+    The caster may choose to add one level of breach to the spell. If multiple mods add the Breach qulaity to the spell their ranks add (Breach(1) and Breach(1) become     Breach(2). Regardless of the Caster's Mage rank, Plasma can't be used to give a spell more than Breach(3).
